@@ -1,0 +1,36 @@
+#navegacao {
+    border: 1px solid black ;
+    margin: 25px 20px 50px 20px;
+    display: flex ;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+#navegacao a img {         /*Img do carrinho*/
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    margin:0px;
+    border: 1px solid black;
+    padding: 10px;
+   
+}
+
+footer img {
+    margin-left: 10px;
+}
+
+footer .novo-usuario {
+    color: black;
+    background-color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    float: right;
+}
+
