@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOME DO SITE</title>
+    <link rel="stylesheet" href="style.css">
+    <title>ProStyle</title>
 </head>
 <body>
     <header id="header">
-        <p>Meus pedidos</p>
-        <p>Fale conosco</p>
-        <a href="login.html">Seja Bem-Vindo(a), faça login
-        </a>
-        <a href="carrinho.html"><img src="assets/carrinho.png" alt="carrinho"></a>
+        <div>
+         <p id="meusPedidos">Meus pedidos</p>
+         <p id="faleConosco">Fale conosco</p>
+        </div>
+        <div><a id="sejaBemVindo" href="login.html">Seja Bem-Vindo(a), faça login
+        </a></div>
     </header>
 
-    <nav>
-        <h1>Nome do site</h1>
+    <nav id="navegacao">
+        <h1>ProStyle</h1>
         <h3><a href="index.html">Home</a></h3>
         <h3>categoria 1</h3>
         <h3>categoria 2</h3>
         <h3>categoria 3</h3>
 
-        <input type="text" placeholder="Buscar por produto &#128269;"> 
+        <input type="text" placeholder="Buscar por produto &#128269;">
+        <a href="carrinho.html"><img src="assets/carrinho.png" alt="carrinho"></a> 
     </nav>
 
     <footer>
@@ -49,5 +52,7 @@
         </div>
 
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
