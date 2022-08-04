@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    margin: 0;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 20px;
+    }
+
+header div{
+    display: flex;
+}
+
+#meusPedidos{
+margin-right: 15px;
+}
+
+#sejaBemVindo{
+    text-decoration:none;
+    color: white;
+}
+
+
+#navegacao {
+    border: 1px solid black ;
+    margin: 25px 20px 50px 20px;
+    display: flex ;
+    justify-content: space-around; 
+    height: 65px;
+}
+
+#navegacao h1 {
+    font-family: 'Great Vibes';
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+#navegacao a {
+    text-decoration: none;
+    color: black;
+}
+
+#navegacao :hover {
+    color: red;
+    text-decoration:overline;
+}
+
+#navegacao input {
+    height: 30px;
+    margin-top: 5px;
+    margin-top: 15px;
+}
+
+#navegacao a img {         /*Img do carrinho*/
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+#destaque img {
+    margin-left: 100px;
+    width: 1365px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 5px 5px 15px 5px #000000 ;
+}
+
+.produtos {
+    border: 1px solid black; 
+    margin: 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.produtos .coluna-1 {
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.produtos .coluna-2 {
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.produtos .coluna-1 .primeiro {
+    margin: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69) ;
+}
+
+.produtos .coluna-1 .segundo {
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69) ;
+    margin: 10px;
+}
+
+.produtos .coluna-1 .terceiro {
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69) ;
+    margin: 10px;
+}
+
+.produtos .coluna-2 .primeiro {
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69) ;
+    margin: 10px;
+}
+
+.produtos .coluna-2 .segundo {
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69) ;
+    margin: 10px;
+}
+
+.produtos .coluna-2 .terceiro {
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69) ;
+    margin: 10px;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    margin:0px;
+    border: 1px solid black;
+    padding: 10px;
+    position: relative;
+   
+}
+
+footer img {
+    margin-left: 10px;
+}
+
+.novo-usuario {
+    border: 4px solid black;
+    box-sizing: border-box;
+    justify-content: center;
+    box-shadow: 5px 5px 15px 5px;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px ;
+    align-items: center;
+    font-family: 'Great Vibes';
+    font-size: 30px;   
+}
+
+section .novo-usuario .footer-e-mail {
+    margin: 10px;
+}
+
+section .novo-usuario .footer-nome {
+    margin: 10px;
+}
+
+
+section .novo-usuario input{
+    display: flex;
+    padding: 10px;
+
+}
+#botao-topo {
+    background: none;
+    border: none;
+    bottom: 20px; 
+    cursor: pointer;
+    display: none;
+    outline: none;
+    padding: 15px;
+    position: fixed; 
+    right: 10px; 
+}
+
+
+/* COMANDO PARA LOGIN */
+#submitEsqueciSenha{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#crieSuaConta{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 40px;
+   font-family: 'Great Vibes';
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-left: 30%;
+
+
+}
+#input{
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+   
+}
+
+#criarConta{
+    border: 4px solid black;
+    box-sizing: border-box;
+    justify-content: center;
+    box-shadow: 5px 5px 15px 5px;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px ;
+    align-items: center;
+    font-size: 30px;
+    
+}
+*{
+    box-sizing: border-box;
+}
+#acessarsuaconta{
+    margin-left: 25%;
+}
+#emailesenha {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%
+}
+#botaodeacessar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/* COMANDOS PARA LOGIN */
+
+/* COMANDO PARA CARRINHO */
+.lista-carrinho{
+    background-color: white;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 15px 5px;
+    border-radius: 10px;
+}
+.novacamisa{
+    width: 100%;
+    display: flex;
+    margin-left: 50%;
+}
+.novosapato{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.novacalça{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
