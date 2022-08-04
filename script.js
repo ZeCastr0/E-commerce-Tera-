@@ -230,3 +230,17 @@ const camisaLista = document.getElementsByClassName('novaCamisa')[0];
     qtdItem.textContent = 0;
     attLista();
 })
+
+// PÁGINA DE LOGIN
+// PÁGINA DE LOGIN
+
+function logar(){
+
+    var login = document.getElementById('imputlogin').value;
+    var imputsenha = document.getElementById('imputsenha').value;
+    if(imputlogin == "admin" && imputsenha == "admin" ){
+      alert('sucesso');
+    }
+  
+  
+  }

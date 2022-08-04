@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./script.js">
     <title>ProStyle</title>
 </head>
+
 <body>
     <header id="header">
         <div>
-         <p id="meusPedidos">Meus pedidos</p>
-         <p id="faleConosco">Fale conosco</p>
+            <p id="meusPedidos">Meus pedidos</p>
+            <p id="faleConosco">Fale conosco</p>
         </div>
-        <div><a id="sejaBemVindo" href="login.html">Seja Bem-Vindo(a), faça login
-        </a></div>
+        <div><a id="sejaBemVindo" href="login.html">Seja Bem-Vindo(a), faça login/cadastro
+            </a></div>
     </header>
 
     <nav id="navegacao">
@@ -27,6 +30,25 @@
         <input type="text" placeholder="Buscar por produto &#128269;">
         <a href="carrinho.html"><img src="assets/carrinho.png" alt="carrinho"></a>
     </nav>
+    <!-- CRIAÇÃO DE CONTA -->
+    <section id="criarConta">
+        <span id="crieSuaConta">Crie sua conta</span>
+        <input type="text" placeholder="Digite seu nome" id="input">
+        <input type="text" placeholder="Digite seu sobrenome" id="input">
+        <input type="password" placeholder="Digite seu password" id="input">
+        <input type="number" placeholder="Número de celular" id="input">
+        <div id="submitEsqueciSenha"><input type="submit" onclick="cadastrar()">
+        <button>Esqueci a senha</button></div>
+    </section>
+    <div class="novo-usuario">
+        <h2 id="acessarsuaconta">Acessar sua conta</h2>
+        <input id="emailesenha" placeholder="Seu e-mail:">
+        <input id="emailesenha" placeholder="Sua senha">
+        <button id="botaodeacessar">Acessar</button>
+    </div>
+    
+
+    <!-- CRIAÇÃO DE LOGIN -->
 
     <footer>
         <div class="infomacoes">
@@ -40,17 +62,13 @@
         </div>
 
         <div class="formas-pagamentos"></div>
-            <h2>formas de pagamentos</h2>
-            <img src="assets/formasDePagamentos.png" alt="formas de pagamentos">
+        <h2>formas de pagamentos</h2>
+        <img src="assets/formasDePagamentos.png" alt="formas de pagamentos">
 
         </div>
-
-        <div class="novo-usuario">
-            <h2>Novo usuario</h2>
-            <input placeholder="Seu Nome:"> 
-            <input placeholder="Seu e-mail:">
-        </div>
-
     </footer>
+
+    <script src="login.js"></script>
 </body>
+
 </html>
