@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="./E-commerce-Tera--main/"> -->
+    <link rel="stylesheet" href="./newhome.css">
     <title>ProStyle</title>
 </head>
 
 <body>
     <header id="header">
         <div>
-         <p id="meusPedidos">Meus pedidos</p>
-         <p id="faleConosco">Fale conosco</p>
+            <p id="meusPedidos">Meus pedidos</p>
+            <p id="faleConosco">Fale conosco</p>
         </div>
         <div><a id="sejaBemVindo" href="login.html">Seja Bem-Vindo(a), faça login/cadastro
-        </a></div>
+            </a></div>
     </header>
 
     <nav id="navegacao">
@@ -31,58 +32,145 @@
             <i class="fa-solid fa-basket-shopping">
                 <span id="qtditens"></span>
             </i>
-            <img src="assets/carrinho.png" alt="" width= "35px";>
+            <img src="assets/carrinho.png" alt="" width="35px" ;>
         </div>
         <a href="carrinho.html"><img src="assets/carrinho.png" alt="carrinho"></a>
     </nav>
-
-    <main id="destaque">
-        <img src="assets/frete.png" alt="destaque">
-    </main>
-
-    <section>
-        <div class="flex">
-            <div class="produtos">
-                <h3>Camisa</h3>
-                <h4 style= "padding: 2rem;">Valor : R$ 10,00</h4>
-                <img src="assets/produto.png" alt="" width="175px" height="225px">
-                <div class="selecao">
-                    <span>Qtd</span>
-                    <button onclick="decrement();">-</button>
-                    <span id="qtdi">0</span>
-                    <button onclick="increment();">+</button>                
-                </div>
-                <button class = "carrinho">Adicionar ao carrinho</button>
+    <section id="section-box">
+        <div id="Camisas">
+            <img src="./assets/camisastyle(2).png" alt="" width="200px" height="200px" id="camisaSupreme">
+            <a href="">Camisa Supreme Branca</a>
+            <span class="gêneroCamisa">Gênero:Masculino</span>
+            <span class="freteGratis">Frete Gratis</span>
+            <span class="valorCamisa">Apenas R$150,00 ou 3xR$50,00</span>
+            <div class="selecao">
+                <span>Qtd</span>
+                <button onclick="decrementOne();">-</button>
+                <span>0</span>
+                <button onclick="incrementOne();">+</button>
             </div>
-            <div class="produtos">
-                <h3>Calça</h3>
-                <h4 style= "padding: 2rem;">Valor : R$ 20,00</h4>
-                <img src="assets/calça.png" alt="" width="175px" height="225px">
-                <div class="selecao">
-                    <span>Qtd</span>
-                    <button onclick="decrementOne();">-</button>
-                    <span>0</span>
-                    <button onclick="incrementOne();">+</button>                
-                </div>
-                <button class = "carrinho">Adicionar ao carrinho</button>
-            </div>
-            <div class="produtos">
-                <h3>Sapato</h3>
-                <h4 style= "padding: 2rem;">Valor : R$ 40,00</h4>
-                <img src="assets/sapato.png" alt="" width="175px" height="225px">
-                <div class="selecao">
-                    <span>Qtd</span>
-                    <button onclick="decrementTwo();">-</button>
-                    <span>0</span>
-                    <button onclick="incrementTwo();">+</button>                
-                </div>
-                <button class = "carrinho">Adicionar ao carrinho</button>
-            </div>
+            <button class="carrinho">Adicionar ao carrinho</button>
         </div>
-        <div class="lista-carrinho">
-            <span id="close">x</span>
+        <div id="Camisas">
+            <img src="./assets/camisaazul.png.png" alt="" width="200px" height="200px" id="camisaSupreme">
+            <a href="">Camisa Vislla</a>
+            <span class="gêneroCamisa">Gênero:Masculino</span>
+            <span class="freteGratis">Frete Gratis</span>
+            <span class="valorCamisa">Apenas R$150,00 ou 3xR$50,00</span>
+            <div class="selecao">
+                <span>Qtd</span>
+                <button onclick="decrementOne();">-</button>
+                <span>0</span>
+                <button onclick="incrementOne();">+</button>
+            </div>
+            <button class="carrinho">Adicionar ao carrinho</button>
+        </div>
+        <div id="Camisas">
+            <img src="./assets/camisa santacruz.png.png" alt="" width="200px" height="200px" id="camisaSupreme">
+            <a href="">Camisa Santa Cruz</a>
+            <span class="gêneroCamisa">Gênero:Masculino</span>
+            <span class="freteGratis">Frete Gratis</span>
+            <span class="valorCamisa">Apenas R$150,00 ou 3xR$50,00</span>
+            <div class="selecao">
+                <span>Qtd</span>
+                <button onclick="decrementOne();">-</button>
+                <span>0</span>
+                <button onclick="incrementOne();">+</button>
+            </div>
+            <button class="carrinho">Adicionar ao carrinho</button>
         </div>
     </section>
+
+    <section id="section-box">
+        <div id="Camisas">
+            <img src="./assets/mangalongacinza.png.png" alt="" width="200px" height="200px" id="camisaSupreme">
+            <a href="">Manga Longa Nike</a>
+            <span class="gêneroCamisa">Gênero:Masculino</span>
+            <span class="freteGratis">Frete Gratis</span>
+            <span class="valorCamisa">Apenas R$150,00 ou 3xR$50,00</span>
+            <div class="selecao">
+                <span>Qtd</span>
+                <button onclick="decrementOne();">-</button>
+                <span>0</span>
+                <button onclick="incrementOne();">+</button>
+            </div>
+            <button class="carrinho">Adicionar ao carrinho</button>
+        </div>
+        <div id="Camisas">
+            <img src="./assets/mangalongaillusionpreta.png.png" alt="" width="200px" height="200px" id="camisaSupreme">
+            <a href="">Manga Longa Illusion</a>
+            <span class="gêneroCamisa">Gênero:Masculino</span>
+            <span class="freteGratis">Frete Gratis</span>
+            <span class="valorCamisa">Apenas R$150,00 ou 3xR$50,00</span>
+            <div class="selecao">
+                <span>Qtd</span>
+                <button onclick="decrementOne();">-</button>
+                <span>0</span>
+                <button onclick="incrementOne();">+</button>
+            </div>
+            <button class="carrinho">Adicionar ao carrinho</button>
+        </div>
+        <div id="Camisas">
+            <img src="./assets/mangalongapreta.png.png" alt="" width="200px" height="200px" id="camisaSupreme">
+            <a href="">Manga Longa Thrasher</a>
+            <span class="gêneroCamisa">Gênero:Masculino</span>
+            <span class="freteGratis">Frete Gratis</span>
+            <span class="valorCamisa">Apenas R$150,00 ou 3xR$50,00</span>
+            <div class="selecao">
+                <span>Qtd</span>
+                <button onclick="decrementOne();">-</button>
+                <span>0</span>
+                <button onclick="incrementOne();">+</button>
+            </div>
+            <button class="carrinho">Adicionar ao carrinho</button>
+        </div>
+    </section>
+    <section id="section-box">
+        <div id="Camisas">
+            <img src="./assets/regataCleveland.png.png" alt="" width="200px" height="200px" id="camisaSupreme">
+            <a href="">Regata Cleveland</a>
+            <span class="gêneroCamisa">Gênero:Masculino</span>
+            <span class="freteGratis">Frete Gratis</span>
+            <span class="valorCamisa">Apenas R$150,00 ou 3xR$50,00</span>
+            <div class="selecao">
+                <span>Qtd</span>
+                <button onclick="decrementOne();">-</button>
+                <span>0</span>
+                <button onclick="incrementOne();">+</button>
+            </div>
+            <button class="carrinho">Adicionar ao carrinho</button>
+        </div>
+        <div id="Camisas">
+            <img src="./assets/regatamiami.png.png" alt="" width="200px" height="200px" id="camisaSupreme">
+            <a href="">Regata Miamiheat</a>
+            <span class="gêneroCamisa">Gênero:Masculino</span>
+            <span class="freteGratis">Frete Gratis</span>
+            <span class="valorCamisa">Apenas R$150,00 ou 3xR$50,00</span>
+            <div class="selecao">
+                <span>Qtd</span>
+                <button onclick="decrementOne();">-</button>
+                <span>0</span>
+                <button onclick="incrementOne();">+</button>
+            </div>
+            <button class="carrinho">Adicionar ao carrinho</button>
+        </div>
+        <div id="Camisas">
+            <img src="./assets/Regata lakers.png.png" alt="" width="200px" height="200px" id="camisaSupreme">
+            <a href="">Regata Lakers</a>
+            <span class="gêneroCamisa">Gênero:Masculino</span>
+            <span class="freteGratis">Frete Gratis</span>
+            <span class="valorCamisa">Apenas R$150,00 ou 3xR$50,00</span>
+            <div class="selecao">
+                <span>Qtd</span>
+                <button onclick="decrementOne();">-</button>
+                <span>0</span>
+                <button onclick="incrementOne();">+</button>
+            </div>
+            <button class="carrinho">Adicionar ao carrinho</button>
+        </div>
+    </section>
+
+
 
     <button id="botao-topo" onclick="voltarParaTopo()">
         <img src="assets/up-arrow.png" alt="Símbolo de seta apontando para cima" width="80px" height="80px">
