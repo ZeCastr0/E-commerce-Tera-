@@ -15,12 +15,18 @@ body {
     text-decoration: none;
     color: white;
 }
-
+.carrinho{
+    height: 2.2rem;
+    width: 2rem;
+    background-color: #212529;
+    margin-right: 0.5rem;
+}
 .menu-botton {
     height: 2.2rem;
     width: 2rem;
     border: solid white 1px;
     border-radius: 5px;
+    margin-left: 0.5em;
 }
 /* Carrosel ------------------------------------------------------------------*/
 
