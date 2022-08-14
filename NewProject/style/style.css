@@ -1,0 +1,42 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/*Headr */
+
+.text-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Carrosel ------------------------------------------------------------------*/
+
+.img-carousel {
+    width: 100%;
+    max-height: 50vh;
+}
+
+/* FOOTER -------------------------------------------------------------------- */
+
+.text-color-itens {
+    --bs-text-opacity: 1;
+    color: rgba(214, 188, 188, 0.658);
+}
+
+.text-color-titles {
+    color: white;
+}
+
+/* LOGIN ------------------------------------ ----------------------------------*/
+
+.background-black{
+    background-color: black;
+}
+
