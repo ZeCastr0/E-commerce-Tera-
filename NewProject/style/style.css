@@ -52,3 +52,14 @@ body {
     background-color: black;
 }
 
+/* Arrumando as roupas */
+.texto-roupas {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #030303;
+}
+.card-text {
+    display: flex;
+    justify-content: center;
+}
