@@ -15,6 +15,10 @@ body {
     text-decoration: none;
     color: white;
 }
+.text-link-black {
+    text-decoration: none;
+    color: black;
+}
 .carrinho{
     height: 2.2rem;
     width: 2rem;
@@ -44,6 +48,11 @@ body {
 
 .text-color-titles {
     color: white;
+}
+
+.background-white {
+    background-color: white;
+    border: white solid 10px;
 }
 
 /* LOGIN ------------------------------------ ----------------------------------*/
