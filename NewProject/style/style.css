@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: black;
+    background-color:  #212529;
 }
 
 /*Headr ---------------------------------------------------------------------*/
@@ -43,7 +43,7 @@ body {
 
 .text-color-itens {
     --bs-text-opacity: 1;
-    color: rgba(214, 188, 188, 0.658);
+    color: rgb(212, 212, 212);
 }
 
 .text-color-titles {
@@ -53,6 +53,10 @@ body {
 .background-white {
     background-color: white;
     border: white solid 10px;
+}
+
+.background-gray {
+    background-color:  #212529;
 }
 
 /* LOGIN ------------------------------------ ----------------------------------*/
