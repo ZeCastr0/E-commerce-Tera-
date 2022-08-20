@@ -36,8 +36,9 @@ body {
 
 .img-carousel {
     width: 100%;
-    max-height: 50vh;
+    max-height: 60vh; 
 }
+
 
 /* FOOTER -------------------------------------------------------------------- */
 
@@ -75,4 +76,9 @@ body {
 .card-text {
     display: flex;
     justify-content: center;
+}
+
+.Tamanho-da-camisa-no-card{
+    width: 200px;
+    height: 200px;
 }
