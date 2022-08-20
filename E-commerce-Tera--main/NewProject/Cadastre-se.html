@@ -35,18 +35,22 @@
         </ul>
         <div class="text-end">
 
-          <button type="button" id="Mover-o-entrar-e-Cadastro" class="btn btn-outline-light me-2"> <a href="login.html" class="text-link " >Entrar</a></button>
-          <button type="button" id="Mover-o-entrar-e-Cadastro" class="btn btn-outline-light me-2"> <a href="Cadastre-se.html" class="text-link" >Cadastre-se</a></button>
+          <button type="button" id="Mover-o-entrar-e-Cadastro" class="btn btn-outline-light me-2"> <a href="login.html"
+              class="text-link ">Entrar</a></button>
+          <button type="button" id="Mover-o-entrar-e-Cadastro" class="btn btn-outline-light me-2"> <a
+              href="Cadastre-se.html" class="text-link">Cadastre-se</a></button>
           <a href="Carrinho.html"><button type="button" class="btn btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4"
-              viewBox="0 0 16 16">
-              <path
-                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
-              </path>
-            </svg>
-            Carrinho
-          </button></a>
-          <button class="navbar-toggler collapsed navbar-dark menu-botton " type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                </path>
+              </svg>
+              Carrinho
+            </button></a>
+          <button class="navbar-toggler collapsed navbar-dark menu-botton " type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -86,9 +90,11 @@
   <div class="container">
     <main>
       <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="" alt="Logo da ProStyle" width="72" height="57"> <!-- LOGO DO SITE------------- -->
+        <img class="d-block mx-auto mb-4" src="" alt="Logo da ProStyle" width="72" height="57">
+        <!-- LOGO DO SITE------------- -->
         <h2>Cadastre-se</h2>
-        <p class="lead">Faça o cadastro para ficar por dentro de tudo e comprar com mais agilidade nas proximas vezes!</p>
+        <p class="lead">Faça o cadastro para ficar por dentro de tudo e comprar com mais agilidade nas proximas vezes!
+        </p>
       </div>
 
       <div>
@@ -152,60 +158,28 @@
                     </div>
 
                     <!-- LOCAL -->
-
-                    <div class="col-md-5">
-                      <label for="country" class="form-label">País</label>
-                      <select class="form-select" id="country" required="">
-                        <option value="">Selecione...</option>
-                        <option>Argentina</option>
-                        <option>Bolívia</option>
-                        <option>Brasil</option>
-                        <option>Chile</option>
-                        <option>Colômbia</option>
-                        <option>Equador</option>
-                        <option>Guiana Francesa </option>
-                        <option>Guiana</option>
-                        <option>Paraguai</option>
-                        <option>Peru</option>
-                        <option>Suriname</option>
-                        <option>Uruguai</option>
-                        <option>Venezuela</option>
-                      </select>
+                    <div class="col-md-12">
+                      <label for="zip" class="form-label">CEP</label>
+                      <input class="form-control" type="text" size="12" id="txtCep"
+                       name="txtCep" onblur="fnBuscaCep(this.value)" style="width:25% ;" />
                       <div class="invalid-feedback">
-                        Selecione um país valido.
+                        Zip code required.
                       </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-12">
+                      <label for="state" class="form-label">Bairro</label>
+                      <input class="form-control" type="text" size="12" id="txtBairro" name="txtBairro" 
+                      onblur="fnBuscaCep(this.value)" style="width:50% ;" />
+                      </select>
+                      <div class="invalid-feedback">
+                        Selecione um estado valido.
+                      </div>
+
+
+                    <div class="col-md-12">
                       <label for="state" class="form-label">Estado</label>
-                      <select class="form-select" id="state" required="">
-                        <option value="">Selecione...</option>
-                        <option>Acre (AC)</option>
-                        <option>Alagoas (AL)</option>
-                        <option>Amapá (AP)</option>
-                        <option>Amazonas (AM)</option>
-                        <option>Bahia (BA)</option>
-                        <option>Ceará (CE)</option>
-                        <option>Distrito Federal (DF)</option>
-                        <option>Espírito Santo (ES)</option>
-                        <option>Goiás (GO)</option>
-                        <option>Maranhão (MA)</option>
-                        <option>Mato Grosso (MT)</option>
-                        <option>Mato Grosso do Sul (MS)</option>
-                        <option>Minas Gerais (MG)</option>
-                        <option>Pará (PA)</option>
-                        <option>Paraíba (PB)</option>
-                        <option>Paraná (PR)</option>
-                        <option>Pernambuco (PE)</option>
-                        <option>Piauí (PI)</option>
-                        <option>Rio de Janeiro (RJ)</option>
-                        <option>Rio Grande do Norte (RN)</option>
-                        <option>Rio Grande do Sul (RS)</option>
-                        <option>Rondônia (RO)</option>
-                        <option>Santa Catarina (SC)</option>
-                        <option>São Paulo (SP)</option>
-                        <option>Sergipe (SE))</option>
-                        <option>Tocantins (TO)</option>
+                      <input class="form-control" type="text" size="12" id="txtUF" name="txtUF" onblur="fnBuscaCep(this.value)" />
                       </select>
                       <div class="invalid-feedback">
                         Selecione um estado valido.
@@ -213,27 +187,27 @@
 
                     </div>
 
-                    <div class="col-md-3">
-                      <label for="zip" class="form-label">CEP</label>
-                      <input type="text" class="form-control" id="zip" placeholder="" required="">
-                      <div class="invalid-feedback">
-                        Zip code required.
-                      </div>
-                    </div>
+
 
                     <div class="col-12">
                       <label for="address" class="form-label">Endereço</label>
-                      <input type="text" class="form-control" id="address" placeholder="Av. Brasil, 350" required="">
+                      <input type="text" class="form-control" id="txtEndereco" name="txtendereço"
+                        placeholder="Av. Brasil, 350" required="">
                       <div class="invalid-feedback">
                         Please enter your shipping address.
                       </div>
                     </div>
 
                     <div class="col-12">
+                      <label for="address2" class="form-label">Número Residêncial<span
+                          class="text-muted"></span></label>
+                      <input type="numer" class="form-control" id="address2" style="width: 90px;">
                       <label for="address2" class="form-label">Ponto de Referência <span
                           class="text-muted">(Optional)</span></label>
                       <input type="text" class="form-control" id="address2"
                         placeholder="Casa, Apartamento, Casa dos fundos...">
+
+
                     </div>
                   </div>
 
@@ -276,6 +250,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
     crossorigin="anonymous"></script>
+  <script src="./java.js"></script>
 
 
 
