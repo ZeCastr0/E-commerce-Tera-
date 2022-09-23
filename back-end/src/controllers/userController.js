@@ -1,6 +1,8 @@
 const UserSchema = require("../models/userSchema")
 const bcrypt = require("bcrypt")
+const jwt = require("jsonwebtoken")
 
+const SECRET = process.env.SECRET
 
 // Criar C
 
@@ -106,10 +108,11 @@ const deleteUserById = async (req, res) => {
   }
 } 
 
+
 module.exports = {
   getAll,
   createUser,
   updateUserById,
   deleteUserById,
-  getById
+  getById,
 }
