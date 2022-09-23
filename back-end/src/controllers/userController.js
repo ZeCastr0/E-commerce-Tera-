@@ -43,16 +43,35 @@ const getAll = async (req, res) => {
   }) 
 }
 
+//Listar Usuario Por ID
+const getById = async (req, res) => {
+  try {
+    const findUser = await UserSchema.findById(req.params.id)
+
+    if (findUser) {            
+        findUser.name = req.body.name || findUser.name
+        findUser.email = req.body.email || findUser.email
+    }
+
+    res.status(200).json({
+        message: `Usuário do ID:'${findUser.id}'.`,
+        findUser
+    })
+
+} catch (error) {
+   console.error(error)
+ }
+}
+
 // Atualizar U
 
-const updateUser = async (req, res) => {
+const updateUserById = async (req, res) => {
   try {
       const findUser = await UserSchema.findById(req.params.id)
 
       if (findUser) {            
           findUser.name = req.body.name || findUser.name
           findUser.email = req.body.email || findUser.email
-          findUser.password = req.body.email || findUser.password
       }
 
       const savedUser = await findUser.save()
@@ -63,32 +82,34 @@ const updateUser = async (req, res) => {
       })
 
   } catch (error) {
-      console.error(error)
-  }
+     console.error(error)
+   }
 }
 
 // Delete D
 
-const deleteUser = async (req, res) => {
+const deleteUserById = async (req, res) => {
   try {
       const userFound = await UserSchema.findById(req.params.id)
 
      await userFound.delete()
 
      res.status(200).json({
-         mensagem: `Usuário '${userFound.email}' deletada com sucesso!`
+         mensagem: `Usuário '${userFound.name}' deletada com sucesso!`
      })
 
   } catch (err) {
       res.status(400).json({
           mensagem: err.message
       })
+      console.log(err)
   }
 } 
 
 module.exports = {
   getAll,
   createUser,
-  updateUser,
-  deleteUser
+  updateUserById,
+  deleteUserById,
+  getById
 }
