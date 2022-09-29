@@ -1,0 +1,27 @@
+Post http://localhost:3000/users/create
+
+{
+	"name" : "usuarioNovo2",
+	"email" : "@Do2",
+	"password" : "SenhaDo2"
+}
+
+GET http://localhost:3000/users/all 
+
+GET http://localhost:3000/users/user/632cf1dde9140f1498db3e54
+
+PATCH - http://localhost:3000/users/update/632ce7dc298e8bc7993a1bc3
+
+{
+        "name": "Nomedo1atulizado",
+        "email": "1@0101"
+}
+
+DELETE http://localhost:3000/users/delete/632cf52f45d6b312fe393787 
+
+
+PATCH http://localhost:3000/users/login
+{
+	"email": "@123456789",
+	"password": "123456789"
+}
