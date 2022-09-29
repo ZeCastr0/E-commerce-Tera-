@@ -1,3 +1,5 @@
+// Arquivo no qual é utilizado mongoose para padronizar os dados do DB.
+
 const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema({

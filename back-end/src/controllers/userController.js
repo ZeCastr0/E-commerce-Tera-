@@ -1,35 +1,34 @@
-const UserSchema = require("../models/userSchema")
-const bcrypt = require("bcrypt")
-const jwt = require("jsonwebtoken")
+const UserSchema = require("../models/userSchema") // utiliza o padrao criado em models
+const bcrypt = require("bcrypt") // para crypt a senha 
+const jwt = require("jsonwebtoken") // token de acesso 
 
-const SECRET = process.env.SECRET
+const SECRET = process.env.SECRET // declarado no env 
 
 // Criar C
 
 const createUser = async (req, res) => {
 
-  // bcrypt.hashSync(valor a ser hasherizado, salt)
-
     console.log("SENHA ANTES DO BCRYPT", req.body.password)
     const hashedPassword = bcrypt.hashSync(req.body.password, 10)
+    // bcrypt.hashSync(valor a ser hasherizado, salt)
     req.body.password = hashedPassword;
 
-    console.log("SENHA DEPOIS DO BCRYPT E REATRIUBUIÇÃO DE VALOR", req.body.password)
+    console.log("SENHA DEPOIS DO BCRYPT", req.body.password)
 
   try {
     // acessar informações do body da requisição
     const newUser = new UserSchema(req.body) 
-    console.log("NOVO USUÁRIO CRIADO", newUser)
+    console.log("NOVO USUÁRIO CRIADO", newUser) // cria o usuario
 
     const savedUser = await newUser.save()
-    console.log("NOVO USUÁRIO SALVO NO BANCO", savedUser)
+    console.log("NOVO USUÁRIO SALVO NO BANCO", savedUser) // salva o usuario 
 
     res.status(201).send({
       message: "Novo usuário criado com sucesso",
       savedUser
     })
   } catch(e) {
-    console.error(e)
+    console.error(e) // exibe o erro 
   }
 }
 
@@ -48,16 +47,16 @@ const getAll = async (req, res) => {
 //Listar Usuario Por ID
 const getById = async (req, res) => {
   try {
-    const findUser = await UserSchema.findById(req.params.id)
+    const findUser = await UserSchema.findById(req.params.id) // busca o usuario pelo ID
 
     if (findUser) {            
         findUser.name = req.body.name || findUser.name
         findUser.email = req.body.email || findUser.email
-    }
+    } // busca name ou email do usuario do id selecionado 
 
     res.status(200).json({
         message: `Usuário do ID:'${findUser.id}'.`,
-        findUser
+        findUser // exibe o usuario.
     })
 
 } catch (error) {
@@ -69,22 +68,22 @@ const getById = async (req, res) => {
 
 const updateUserById = async (req, res) => {
   try {
-      const findUser = await UserSchema.findById(req.params.id)
+      const findUser = await UserSchema.findById(req.params.id) // busca o usuario pelo ID
 
       if (findUser) {            
-          findUser.name = req.body.name || findUser.name
+          findUser.name = req.body.name || findUser.name 
           findUser.email = req.body.email || findUser.email
-      }
+      } // busca name ou email do usuario do id selecionado 
 
-      const savedUser = await findUser.save()
+      const savedUser = await findUser.save() // salva as alteraçoes 
 
       res.status(200).json({
           message: "Usuário atualizada com sucesso!",
-          savedUser
+          savedUser // salva
       })
 
   } catch (error) {
-     console.error(error)
+     console.error(error) // exibe o erro 
    }
 }
 
@@ -92,19 +91,19 @@ const updateUserById = async (req, res) => {
 
 const deleteUserById = async (req, res) => {
   try {
-      const userFound = await UserSchema.findById(req.params.id)
+      const userFound = await UserSchema.findById(req.params.id) // busca o usuario pelo ID
 
-     await userFound.delete()
+     await userFound.delete() // faz o delete
 
      res.status(200).json({
-         mensagem: `Usuário '${userFound.name}' deletada com sucesso!`
+         mensagem: `Usuário '${userFound.name}' deletada com sucesso!` // mensagem caso de certo
      })
 
   } catch (err) {
       res.status(400).json({
-          mensagem: err.message
+          mensagem: err.message 
       })
-      console.log(err)
+      console.log(err) // exibe o erro 
   }
 } 
 
@@ -115,4 +114,4 @@ module.exports = {
   updateUserById,
   deleteUserById,
   getById,
-}
+} // exporta 
